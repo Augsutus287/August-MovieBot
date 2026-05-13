@@ -16,11 +16,13 @@ Movie =[
     {   "name": "Super Mario Bros Movie", "genre": "animation", "age": "7", "mood": "adventurous"}
     ]
 
-best_score = 0
-best_movie = ""
+while True:
 
-for movie in Movie:
-    score = 0
+    
+    best_score = 0
+    best_movie = ""
+    for movie in Movie:
+        score = 0
     if movie["genre"] == genre:
         score += 1
 
@@ -33,4 +35,10 @@ for movie in Movie:
         best_score = score
         best_movie = movie["name"]    
      
-print("Recomendation:", best_movie)
+    print("Recomendation:", best_movie)
+    print("are you satisfied with the recomendation? yes or no")
+    answer = input()
+    if answer == "yes": 
+        break
+
+    print("KING BOB!")
