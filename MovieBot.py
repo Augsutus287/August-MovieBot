@@ -68,7 +68,7 @@ while True:
             best_movies = [movie["name"]] 
         elif score == best_score and score > 0:
             best_movies.append(movie["name"])  
-
+        #låter boten recomendera tre filmer
     print("Recommendations:", ", ".join(best_movies[:3]))
     print("Are you satisfied with the recommendation? yes or no")
     
